@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68365005-6C10-40EC-8F27-9D9031FFEF1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AlgorithmsHW</RootNamespace>
+    <AssemblyName>AlgorithmsHW</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bonus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bonus.Designer.cs">
+      <DependentUpon>Bonus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BubbleSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BubbleSort.Designer.cs">
+      <DependentUpon>BubbleSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KMPAlgorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KMPAlgorithm.Designer.cs">
+      <DependentUpon>KMPAlgorithm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KSP.Designer.cs">
+      <DependentUpon>KSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinkedSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinkedSearch.Designer.cs">
+      <DependentUpon>LinkedSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainScreen.Designer.cs">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CityString.cs" />
+    <Compile Include="Models\BonusLList.cs" />
+    <Compile Include="Models\Items.cs" />
+    <Compile Include="Models\MyLList.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectionSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectionSort.Designer.cs">
+      <DependentUpon>SelectionSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelResult.Designer.cs">
+      <DependentUpon>TravelResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TSP.Designer.cs">
+      <DependentUpon>TSP.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bonus.resx">
+      <DependentUpon>Bonus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BubbleSort.resx">
+      <DependentUpon>BubbleSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KMPAlgorithm.resx">
+      <DependentUpon>KMPAlgorithm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KSP.resx">
+      <DependentUpon>KSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinkedSearch.resx">
+      <DependentUpon>LinkedSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainScreen.resx">
+      <DependentUpon>MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SelectionSort.resx">
+      <DependentUpon>SelectionSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelResult.resx">
+      <DependentUpon>TravelResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TSP.resx">
+      <DependentUpon>TSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
