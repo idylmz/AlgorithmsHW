@@ -136,7 +136,7 @@ namespace AlgorithmsHW
                 if (j < BestRoute.Distance)
                 {
                     BestRoute.Distance = j;
-                    BestRoute.RouteList = messageBox + arr[0];
+                    BestRoute.RouteList = messageBox + arr[0]; 
                 }
                 messageBox = "";
                 TravelAll(arr, start + 1);
